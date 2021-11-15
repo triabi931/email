@@ -50,11 +50,3 @@ if(isset($_POST['submit']))
     echo "<br>You can use the following form again to enter a new name."; 
 }
 ?>
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-   <input type="text" name="penerima" placeholder="email"><br>
-   <input type="text" name="subjekk" placeholder="Nama Penerima"><br>
-   <textarea name="pesan" placeholder="Isi Pesan" cols="40">
-   </textarea><br>
-   <button style= "background-color:#008000;" type="reset" >Clear</button>
-   <button type="submit" name="submit" value="Submit Form" >Kirim</button>
-</form>
