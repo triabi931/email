@@ -1,23 +1,22 @@
-<!DOCTYPE HTML>
 <html>
     <head>
-        <title>PHP Mailer</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Login BKK</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="logo.png" rel="shortcut icon" >
     </head>
    
-   <?php
-include ('PHPMailer/src/SMTP.php');
-
+    <body>
+        <div class="container">
+          <h1>Masukkan Email Yang Akan Dikirim</h1>
+<form method="post" action="index1.php">
+    <input type="text" name="penerima" placeholder="email"><br>
+    <input type="text" name="subjekk" placeholder="Subjek Pesan"><br>
+    <textarea name="pesan" placeholder="Isi Pesan" cols="40"> Isi pesan...
+    </textarea><br>
+    <button style= "background-color:#008000;" type="reset" >Clear</button>
+    <button type="submit" name="submit" value="Submit Form" >Kirim</button>
+ </form>
  
-?>
-<body>
-<form method="post" action="index.php">
-   <input type="text" name="penerima" placeholder="email"><br>
-   <input type="text" name="subjekk" placeholder="Nama Penerima"><br>
-   <textarea name="pesan" placeholder="Isi Pesan" cols="40">
-   </textarea><br>
-   <button style= "background-color:#008000;" type="reset" >Clear</button>
-   <button type="submit" name="submit" value="Submit Form" >Kirim</button>
-</form>
-  </body>
+</div>     
+</body>
 </html>
