@@ -37,9 +37,8 @@ if(isset($_POST['submit']))
 
     $send = $mail->send();
     if($send){
-        echo    "<script type='text/javascript'> document.location = 'index.php'; </script>";
-        echo    "<script type='text/javascript'> document.location = 'index.php'; ";
         echo    "<script>alert('Email Berhasil Dikirim')</script>";
+        echo    "<script type='text/javascript'> document.location = 'index.html'; </script>";
     }else {
         echo    "<script>alert('Email Gagal Dikirim')</script>";
     }
